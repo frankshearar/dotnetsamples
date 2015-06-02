@@ -433,7 +433,7 @@ Where potentially many different `TraceEventParsers` are ‘attached’ to a
 that knows how to decode them. The result is that you get fully parsed events in
 your callback code. Here is code that shows how to ‘connect’ the
 `KernelTraceEventParser` class to an `ETWTraceEventSource` and then subscribe to
-a the `ProcessStart1 event and fetch out the process name and command line.
+the `ProcessStart1` event and fetch out the process name and command line.
 Notice that in the callback delegate we specify a specific subclass of
 `TraceEvent` called ‘ProcessTraceData’ which in addition to all the generic
 properties of an event (Name, Process, Timestamp ...) also has properties for
